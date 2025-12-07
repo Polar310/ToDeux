@@ -5,6 +5,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
+      // Set base for GitHub Pages (adjust if you deploy under a different path)
+      base: '/simplesync-todo/',
       server: {
         port: 3000,
         host: '0.0.0.0',
